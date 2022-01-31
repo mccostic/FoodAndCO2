@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:id="@+id/item_food_card"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginBottom="1dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="1dp"
+    android:layout_height="80dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools">
+
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:weightSum="3"
+           android:layout_height="wrap_content">
+           <androidx.appcompat.widget.AppCompatTextView
+               android:layout_width="0dp"
+               android:id="@+id/tv_food_name"
+               tools:text="Food: Lamb"
+               android:fontFamily="@font/roboto_regular"
+               android:layout_weight="2.7"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               android:layout_marginStart="10dp"
+               android:layout_height="wrap_content"/>
+
+           <androidx.appcompat.widget.AppCompatCheckBox
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:visibility="gone"
+               android:id="@+id/ckb_selected"
+               tools:visibility="visible"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/pt_sans_regular"
+                android:id="@+id/tv_co2_kilos_equivalent"
+                tools:text="CO2 Kilos Equivalent: 39.2"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:id="@+id/tv_car_miles_equivalent"
+                tools:text="Car Miles Equivalent: 91"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/pt_sans_regular"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
